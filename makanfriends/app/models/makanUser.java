@@ -4,7 +4,6 @@ import com.avaje.ebean.Model;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
-import javax.persistence.*;
 /**
  * Created by fuhchangloi on 16/11/15.
  */
