@@ -1,7 +1,9 @@
 @(message: String)
 
 @main("Welcome to Play") {
-
-    @play20.welcome(message, style = "Java")
-
+    <form action="@routes.Application.addMakanUser()" method="post">
+        <input type="text" name="nric"/>
+        <input type="text" name="name"/>
+        <button>add user</button>
+    </form>
 }
