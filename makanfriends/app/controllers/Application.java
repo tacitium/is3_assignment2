@@ -11,6 +11,9 @@ public class Application extends Controller {
         return ok(index.render("Your new application is ready."));
     }
 
+    public Result test(){
+        return ok(test.render());
+    }
     public Result addMakanUser(){
 
         MakanUser user = Form.form(MakanUser.class).bindFromRequest().get();
