@@ -9,6 +9,17 @@ create table makan_user (
   constraint pk_makan_user primary key (nric))
 ;
 
+create table restaurant (
+  rest_id                   integer auto_increment not null,
+  name                      varchar(255),
+  address                   varchar(255),
+  postal_code               integer,
+  phone                     integer,
+  lat                       double,
+  lng                       double,
+  constraint pk_restaurant primary key (rest_id))
+;
+
 
 
 
@@ -17,6 +28,8 @@ create table makan_user (
 SET FOREIGN_KEY_CHECKS=0;
 
 drop table makan_user;
+
+drop table restaurant;
 
 SET FOREIGN_KEY_CHECKS=1;
 
