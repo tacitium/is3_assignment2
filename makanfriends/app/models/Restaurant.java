@@ -1,12 +1,12 @@
 package models;
-
+import com.avaje.ebean.Model;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 /**
  * Created by fuhchangloi on 19/11/15.
  */
 @Entity
-public class Restaurant {
+public class Restaurant extends Model{
 
 
     @Id
@@ -17,6 +17,17 @@ public class Restaurant {
     private int phone;
     private double lat;
     private double lng;
+    private int branchID;
+
+    public int getBranchID() {
+        return branchID;
+    }
+
+    public void setBranchID(int branchID) {
+        this.branchID = branchID;
+    }
+
+
 
     public int getRestID() {
 
