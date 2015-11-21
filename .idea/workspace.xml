@@ -2,30 +2,75 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="af7803ec-2407-4cb7-ba68-2c4320dac393" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/makanfriends/public/images/hg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/makanfriends/public/images/sg_flyer.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/makanfriends/public/images/slider/cuisine_slider.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/makanfriends/public/images/slider/location_slider.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/makanfriends/public/images/slider/price_slider.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/makanfriends/public/images/slider/recommend_slider.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/makanfriends/app/controllers/CuisineController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/makanfriends/app/controllers/HomeController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/makanfriends/app/controllers/LocationController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/makanfriends/app/controllers/RecommendController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/makanfriends/app/models/Restaurant.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/makanfriends/app/views/Cuisine.scala.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/makanfriends/app/views/HomePage.scala.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/makanfriends/app/views/Location.scala.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/makanfriends/app/views/Recommend.scala.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/makanfriends/public/images/blog/blog-bg.jpg" afterPath="$PROJECT_DIR$/makanfriends/public/images/blog/blog-bg1.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/makanfriends/public/images/blog/blog-bg.jpg" afterPath="$PROJECT_DIR$/makanfriends/public/images/blog/blog-bg.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/makanfriends/public/images/title_1.png" afterPath="$PROJECT_DIR$/makanfriends/public/images/title_1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/makanfriends/public/images/blog/if_bg.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/makanfriends/public/images/restImgs/Artistry1.jpeg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/makanfriends/public/images/restImgs/Artistry2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/makanfriends/public/images/restImgs/Artistry3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/makanfriends/public/images/restImgs/Hai1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/makanfriends/public/images/restImgs/Hai2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/makanfriends/public/images/restImgs/Hai3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/makanfriends/public/images/restImgs/Ronin1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/makanfriends/public/images/restImgs/Ronin2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/makanfriends/public/images/restImgs/Ronin3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/makanfriends/public/images/restImgs/aa1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/makanfriends/public/images/restImgs/aa2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/makanfriends/public/images/restImgs/aa3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/makanfriends/public/images/restImgs/andre1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/makanfriends/public/images/restImgs/andre2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/makanfriends/public/images/restImgs/andre3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/makanfriends/public/images/restImgs/cut1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/makanfriends/public/images/restImgs/cut2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/makanfriends/public/images/restImgs/cut3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/makanfriends/public/images/restImgs/dtf1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/makanfriends/public/images/restImgs/dtf2.jpeg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/makanfriends/public/images/restImgs/dtf3.jpeg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/makanfriends/public/images/restImgs/foc1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/makanfriends/public/images/restImgs/foc2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/makanfriends/public/images/restImgs/foc3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/makanfriends/public/images/restImgs/garden1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/makanfriends/public/images/restImgs/garden2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/makanfriends/public/images/restImgs/garden3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/makanfriends/public/images/restImgs/gbc1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/makanfriends/public/images/restImgs/gbc2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/makanfriends/public/images/restImgs/gbc3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/makanfriends/public/images/restImgs/kv1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/makanfriends/public/images/restImgs/kv2.JPG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/makanfriends/public/images/restImgs/kv3.jpeg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/makanfriends/public/images/restImgs/nylon1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/makanfriends/public/images/restImgs/nylon2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/makanfriends/public/images/restImgs/nylon3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/makanfriends/public/images/restImgs/san1.jpeg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/makanfriends/public/images/restImgs/san2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/makanfriends/public/images/restImgs/san3.jpeg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/makanfriends/public/images/restImgs/sb1.jpeg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/makanfriends/public/images/restImgs/sb2.jpeg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/makanfriends/public/images/restImgs/sb3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/makanfriends/public/images/restImgs/shinji1.jpeg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/makanfriends/public/images/restImgs/shinji2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/makanfriends/public/images/restImgs/shinji3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/makanfriends/public/images/restImgs/smith1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/makanfriends/public/images/restImgs/smith2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/makanfriends/public/images/restImgs/smith3.jpeg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/makanfriends/public/images/restImgs/tt1.jpeg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/makanfriends/public/images/restImgs/tt2.jpeg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/makanfriends/public/images/restImgs/tt3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/makanfriends/public/images/restImgs/two1.JPG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/makanfriends/public/images/restImgs/two2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/makanfriends/public/images/restImgs/two3.jpeg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/makanfriends/public/images/restImgs/zhong1.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/makanfriends/public/images/restImgs/zhong2.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/makanfriends/public/images/restImgs/zhong3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/makanfriends/app/models/RestaurantImages.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/makanfriends/app/controllers/Application.java" afterPath="$PROJECT_DIR$/makanfriends/app/controllers/Application.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/makanfriends/app/views/list.scala.html" afterPath="$PROJECT_DIR$/makanfriends/app/views/list.scala.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/makanfriends/build.sbt" afterPath="$PROJECT_DIR$/makanfriends/build.sbt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/makanfriends/app/models/Restaurant.java" afterPath="$PROJECT_DIR$/makanfriends/app/models/Restaurant.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/makanfriends/app/views/Cuisine.scala.html" afterPath="$PROJECT_DIR$/makanfriends/app/views/Cuisine.scala.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/makanfriends/app/views/HomePage.scala.html" afterPath="$PROJECT_DIR$/makanfriends/app/views/HomePage.scala.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/makanfriends/app/views/test.scala.html" afterPath="$PROJECT_DIR$/makanfriends/app/views/test.scala.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/makanfriends/conf/application.conf" afterPath="$PROJECT_DIR$/makanfriends/conf/application.conf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/makanfriends/conf/routes" afterPath="$PROJECT_DIR$/makanfriends/conf/routes" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/makanfriends/conf/evolutions/default/1.sql" afterPath="$PROJECT_DIR$/makanfriends/conf/evolutions/default/1.sql" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/makanfriends/public/css/main.css" afterPath="$PROJECT_DIR$/makanfriends/public/css/main.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/makanfriends/public/less/main.less" afterPath="$PROJECT_DIR$/makanfriends/public/less/main.less" />
     </list>
     <ignored path="is3_assignment2.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -107,11 +152,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="listapplication.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="listapplication.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/makanfriends/app/controllers/listapplication.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.2494331">
+            <state vertical-scroll-proportion="0.0">
               <caret line="18" column="68" selection-start-line="18" selection-start-column="68" selection-end-line="18" selection-end-column="68" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="application.conf" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/makanfriends/conf/application.conf">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.4829612">
+              <caret line="35" column="24" selection-start-line="35" selection-start-column="24" selection-end-line="35" selection-end-column="24" />
               <folding />
             </state>
           </provider>
@@ -137,16 +192,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="test.scala.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/makanfriends/app/views/test.scala.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="91" column="10" selection-start-line="91" selection-start-column="10" selection-end-line="91" selection-end-column="10" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="Git.Settings">
@@ -164,10 +209,10 @@
         <option value="$PROJECT_DIR$/makanfriends/app/controllers/listapplication.java" />
         <option value="$PROJECT_DIR$/makanfriends/app/models/makanUser.java" />
         <option value="$PROJECT_DIR$/makanfriends/app/views/test.scala.html" />
-        <option value="$PROJECT_DIR$/makanfriends/conf/application.conf" />
         <option value="$PROJECT_DIR$/makanfriends/conf/routes" />
         <option value="$PROJECT_DIR$/makanfriends/app/views/HomePage.scala.html" />
         <option value="$PROJECT_DIR$/makanfriends/app/views/list.scala.html" />
+        <option value="$PROJECT_DIR$/makanfriends/conf/application.conf" />
       </list>
     </option>
   </component>
@@ -641,7 +686,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -819,7 +864,7 @@
     <entry file="file://$PROJECT_DIR$/makanfriends/app/views/test.scala.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="91" column="10" selection-start-line="91" selection-start-column="10" selection-end-line="91" selection-end-column="10" />
+          <caret line="118" column="10" selection-start-line="118" selection-start-column="10" selection-end-line="118" selection-end-column="10" />
           <folding />
         </state>
       </provider>
@@ -829,13 +874,6 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="16" column="38" selection-start-line="16" selection-start-column="38" selection-end-line="16" selection-end-column="38" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/makanfriends/conf/application.conf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.82726204">
-          <caret line="32" column="33" selection-start-line="32" selection-start-column="33" selection-end-line="32" selection-end-column="33" />
         </state>
       </provider>
     </entry>
@@ -897,8 +935,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/makanfriends/app/controllers/listapplication.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2494331">
+        <state vertical-scroll-proportion="0.0">
           <caret line="18" column="68" selection-start-line="18" selection-start-column="68" selection-end-line="18" selection-end-column="68" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/makanfriends/conf/application.conf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4829612">
+          <caret line="35" column="24" selection-start-line="35" selection-start-column="24" selection-end-line="35" selection-end-column="24" />
           <folding />
         </state>
       </provider>
