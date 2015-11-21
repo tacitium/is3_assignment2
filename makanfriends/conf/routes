@@ -7,7 +7,14 @@ GET     /                           controllers.Application.index()
 
 GET     /test                       controllers.Application.test()
 
+
 GET     /list                       controllers.listapplication.list()
+
+GET		/Home						controllers.HomeController.index()
+GET		/Cuisine					controllers.CuisineController.index()
+GET		/Recommend					controllers.RecommendController.index()
+GET		/Location					controllers.LocationController.index()
+
 
 POST     /MakanUser                 controllers.Application.addMakanUser()
 # Map static resources from the /public folder to the /assets URL path

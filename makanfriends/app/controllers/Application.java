@@ -29,7 +29,7 @@ public class Application extends Controller {
                 //Logger.info(line);
             //}
 
-            URL url = new URL("http://api.boorah.com/restaurants/WebServices/RestaurantSearch");
+            URL url = new URL("https://api.yelp.com/v2/search/?location=Singapore&limit=20&cc=SG");
             HttpURLConnection conn = (HttpURLConnection) url.openConnection();
             conn.setRequestMethod("GET");
             conn.setRequestProperty("Accept", "application/json");
