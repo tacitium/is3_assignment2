@@ -1,13 +1,18 @@
 package controllers;
 
-import play.data.Form;
-import play.mvc.*;
-import play.*;
-import views.html.*;
 import models.Restaurant;
-import models.MakanUser;
+import java.util.List;
 import java.net.*;
 import java.io.*;
+import com.avaje.ebean.Model;
+import play.data.Form;
+import play.libs.Json;
+import play.mvc.*;
+import java.util.List;
+import views.html.*;
+import models.MakanUser;
+import static play.libs.Json.toJson;
+
 public class listapplication extends Controller {
 
     public Result index(String keyword) {
@@ -18,7 +23,7 @@ public class listapplication extends Controller {
             if(listofrestaurants.get(i).getName() == keyword){
 
             }
-            
+            else if(listofrestaurants.get(i).)
         }
         return ok(Json.toJson(makans));
     }
