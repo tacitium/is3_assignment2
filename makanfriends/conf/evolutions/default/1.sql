@@ -17,7 +17,15 @@ create table restaurant (
   phone                     integer,
   lat                       double,
   lng                       double,
+  branch_id                 integer,
   constraint pk_restaurant primary key (rest_id))
+;
+
+create table restaurant_images (
+  id                        integer auto_increment not null,
+  restaurant_id             integer,
+  img_url                   varchar(255),
+  constraint pk_restaurant_images primary key (id))
 ;
 
 
@@ -30,6 +38,8 @@ SET FOREIGN_KEY_CHECKS=0;
 drop table makan_user;
 
 drop table restaurant;
+
+drop table restaurant_images;
 
 SET FOREIGN_KEY_CHECKS=1;
 
