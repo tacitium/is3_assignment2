@@ -2,25 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="af7803ec-2407-4cb7-ba68-2c4320dac393" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/makanfriends/public/images/cuisine/New folder/chinese_img.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/makanfriends/public/images/cuisine/New folder/european_img.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/makanfriends/public/images/cuisine/New folder/indian_img.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/makanfriends/public/images/cuisine/New folder/japan_img.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/makanfriends/public/images/cuisine/New folder/korean_img.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/makanfriends/public/images/cuisine/New folder/malay_img.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/makanfriends/public/images/cuisine/New folder/western_img.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/makanfriends/public/images/cuisine/chinese_img.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/makanfriends/public/images/cuisine/european_img.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/makanfriends/public/images/cuisine/if_bg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/makanfriends/public/images/cuisine/indian_img.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/makanfriends/public/images/cuisine/japan_img.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/makanfriends/public/images/cuisine/korean_img.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/makanfriends/public/images/cuisine/malay_img.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/makanfriends/public/images/cuisine/western_img.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/makanfriends/app/views/Cuisine.scala.html" afterPath="$PROJECT_DIR$/makanfriends/app/views/Cuisine.scala.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/makanfriends/conf/application.conf" afterPath="$PROJECT_DIR$/makanfriends/conf/application.conf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/makanfriends/public/css/main.css" afterPath="$PROJECT_DIR$/makanfriends/public/css/main.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/makanfriends/public/css/responsive.css" afterPath="$PROJECT_DIR$/makanfriends/public/css/responsive.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/makanfriends/app/controllers/listapplication.java" afterPath="$PROJECT_DIR$/makanfriends/app/controllers/listapplication.java" />
     </list>
     <ignored path="is3_assignment2.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -62,31 +44,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="listapplication.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="listapplication.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/makanfriends/app/controllers/listapplication.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
+            <state vertical-scroll-proportion="0.32426304">
+              <caret line="20" column="12" selection-start-line="20" selection-start-column="12" selection-end-line="20" selection-end-column="12" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="application.conf" pinned="false" current-in-tab="true">
+      <file leaf-file-name="application.conf" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/makanfriends/conf/application.conf">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.586369">
-              <caret line="42" column="20" selection-start-line="42" selection-start-column="20" selection-end-line="42" selection-end-column="20" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Application.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/makanfriends/app/controllers/Application.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="19" column="39" selection-start-line="18" selection-start-column="7" selection-end-line="19" selection-end-column="39" />
+            <state vertical-scroll-proportion="-26.741936">
+              <caret line="39" column="51" selection-start-line="39" selection-start-column="51" selection-end-line="39" selection-end-column="51" />
               <folding />
             </state>
           </provider>
@@ -96,15 +68,10 @@
         <entry file="file://$PROJECT_DIR$/makanfriends/app/models/Restaurant.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="13" column="24" selection-start-line="13" selection-start-column="24" selection-end-line="13" selection-end-column="24" />
+              <caret line="21" column="28" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="28" />
               <folding>
-                <element signature="imports" expanded="false" />
-                <element signature="e#444#445#0" expanded="false" />
-                <element signature="e#475#476#0" expanded="false" />
-                <element signature="e#520#521#0" expanded="false" />
-                <element signature="e#560#561#0" expanded="false" />
-                <element signature="e#663#664#0" expanded="false" />
-                <element signature="e#699#700#0" expanded="false" />
+                <element signature="e#444#445#0" expanded="true" />
+                <element signature="e#475#476#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -159,8 +126,8 @@
         <option value="$PROJECT_DIR$/makanfriends/conf/routes" />
         <option value="$PROJECT_DIR$/makanfriends/app/views/HomePage.scala.html" />
         <option value="$PROJECT_DIR$/makanfriends/app/views/list.scala.html" />
-        <option value="$PROJECT_DIR$/makanfriends/app/controllers/listapplication.java" />
         <option value="$PROJECT_DIR$/makanfriends/conf/application.conf" />
+        <option value="$PROJECT_DIR$/makanfriends/app/controllers/listapplication.java" />
       </list>
     </option>
   </component>
@@ -864,14 +831,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/makanfriends/app/controllers/HomeController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="14" column="1" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/makanfriends/app/controllers/Application.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -888,34 +847,37 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/makanfriends/conf/application.conf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-26.741936">
+          <caret line="39" column="51" selection-start-line="39" selection-start-column="51" selection-end-line="39" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/makanfriends/app/controllers/HomeController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="14" column="1" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/makanfriends/app/models/Restaurant.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="13" column="24" selection-start-line="13" selection-start-column="24" selection-end-line="13" selection-end-column="24" />
+          <caret line="21" column="28" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="28" />
           <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#444#445#0" expanded="false" />
-            <element signature="e#475#476#0" expanded="false" />
-            <element signature="e#520#521#0" expanded="false" />
-            <element signature="e#560#561#0" expanded="false" />
-            <element signature="e#663#664#0" expanded="false" />
-            <element signature="e#699#700#0" expanded="false" />
+            <element signature="e#444#445#0" expanded="true" />
+            <element signature="e#475#476#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/makanfriends/app/controllers/listapplication.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/makanfriends/conf/application.conf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.586369">
-          <caret line="42" column="20" selection-start-line="42" selection-start-column="20" selection-end-line="42" selection-end-column="20" />
+        <state vertical-scroll-proportion="0.32426304">
+          <caret line="20" column="12" selection-start-line="20" selection-start-column="12" selection-end-line="20" selection-end-column="12" />
           <folding />
         </state>
       </provider>

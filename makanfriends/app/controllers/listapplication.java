@@ -4,6 +4,7 @@ import play.data.Form;
 import play.mvc.*;
 import play.*;
 import views.html.*;
+import models.Restaurant;
 import models.MakanUser;
 import java.net.*;
 import java.io.*;
@@ -13,8 +14,11 @@ public class listapplication extends Controller {
         //http://stackoverflow.com/questions/20685492/creating-dynamic-list-with-jquery
 
         List<Restaurant> listofrestaurants = new Model.Finder(String.class, Restaurant.class).all();
-        for(int i=0;i<listofrestaurants.Size(); i++){
+        for(int i=0;i<listofrestaurants.size(); i++){
+            if(listofrestaurants.get(i).getName() == keyword){
 
+            }
+            
         }
         return ok(Json.toJson(makans));
     }
