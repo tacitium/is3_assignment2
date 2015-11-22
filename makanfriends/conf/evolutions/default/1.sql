@@ -18,6 +18,7 @@ create table restaurant (
   lat                       double,
   lng                       double,
   branch_id                 integer,
+  category                  varchar(255),
   constraint pk_restaurant primary key (rest_id))
 ;
 

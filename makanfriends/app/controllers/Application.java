@@ -1,6 +1,9 @@
 package controllers;
 
 import com.avaje.ebean.Model;
+import com.fasterxml.jackson.databind.JsonNode;
+import models.Restaurant;
+import play.Logger;
 import play.data.Form;
 import play.libs.Json;
 import play.mvc.*;
@@ -16,9 +19,16 @@ public class Application extends Controller {
     }
 
     public Result test() {
-        List<MakanUser> makans = new Model.Finder(String.class, MakanUser.class).all();
-        return ok(Json.toJson(makans));
+        List<Restaurant> list = Restaurant.find.findList();
+        return ok(Json.toJson(list));
     }
+
+    public Result test2() {
+        List<Restaurant> list = Restaurant.find.where().like("category", "%" + request().getQueryString("type") +"%").findList();
+        return ok(Json.toJson(list));
+    }
+
+
     public Result addMakanUser(){
 
         MakanUser user = Form.form(MakanUser.class).bindFromRequest().get();

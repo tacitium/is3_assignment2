@@ -19,6 +19,18 @@ public class Restaurant extends Model{
     private double lng;
     private int branchID;
 
+
+    public static Finder<Integer, Restaurant> find = new Model.Finder<>(Integer.class, Restaurant.class);
+
+    public String getCategory() {
+        return category;
+    }
+
+    public void setCategory(String category) {
+        this.category = category;
+    }
+
+    private String category;
     public int getBranchID() {
         return branchID;
     }
