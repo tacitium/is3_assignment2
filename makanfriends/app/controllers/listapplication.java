@@ -9,8 +9,14 @@ import java.net.*;
 import java.io.*;
 public class listapplication extends Controller {
 
-    public Result index() {
-        return ok(index.render("Your new application is ready."));
+    public Result index(String keyword) {
+        //http://stackoverflow.com/questions/20685492/creating-dynamic-list-with-jquery
+
+        List<Restaurant> listofrestaurants = new Model.Finder(String.class, Restaurant.class).all();
+        for(int i=0;i<listofrestaurants.Size(); i++){
+
+        }
+        return ok(Json.toJson(makans));
     }
 
     public Result list() {
