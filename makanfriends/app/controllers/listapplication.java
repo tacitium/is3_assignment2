@@ -4,6 +4,7 @@ import models.Restaurant;
 import java.util.List;
 import java.net.*;
 import java.io.*;
+import play.*;
 import com.avaje.ebean.Model;
 import play.data.Form;
 import play.libs.Json;
@@ -19,13 +20,12 @@ public class listapplication extends Controller {
         //http://stackoverflow.com/questions/20685492/creating-dynamic-list-with-jquery
 
         List<Restaurant> listofrestaurants = new Model.Finder(String.class, Restaurant.class).all();
-        for(int i=0;i<listofrestaurants.size(); i++){
-            if(listofrestaurants.get(i).getName() == keyword){
+        /*for(int i=0;i<listofrestaurants.size(); i++){
+            if(keyword == "Recommended"){
 
             }
-            else if(listofrestaurants.get(i).)
-        }
-        return ok(Json.toJson(makans));
+        }*/
+        return ok(Json.toJson(listofrestaurants));
     }
 
     public Result list() {
@@ -49,8 +49,7 @@ public class listapplication extends Controller {
             conn.setRequestMethod("GET");
             conn.setRequestProperty("Accept", "application/json");
             if (conn.getResponseCode() != 200) {
-                throw new RuntimeException("Failed : HTTP error code : "
-                        + conn.getResponseCode());
+                throw new RuntimeException("Failed : HTTP error code : " + conn.getResponseCode());
             }
 
             BufferedReader br = new BufferedReader(new InputStreamReader(
