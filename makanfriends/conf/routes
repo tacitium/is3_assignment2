@@ -6,7 +6,7 @@
 GET     /                           controllers.Application.index()
 
 GET     /test                       controllers.Application.test()
-
+GET     /test2/                    controllers.Application.test2()
 
 GET     /list                       controllers.listapplication.list()
 
@@ -14,6 +14,7 @@ GET		/Home						controllers.HomeController.index()
 GET		/Cuisine					controllers.CuisineController.index()
 GET		/Recommend					controllers.RecommendController.index()
 GET		/Location					controllers.LocationController.index()
+GET     /Summary                    controllers.SummaryController.index()
 
 
 POST     /MakanUser                 controllers.Application.addMakanUser()
