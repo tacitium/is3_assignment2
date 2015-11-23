@@ -14,10 +14,11 @@ import static play.libs.Json.toJson;
 public class Application extends Controller {
 
     public Result index() {
-
         return ok(test.render());
     }
-
+    public Result index2(String type){
+        return ok(test2.render(type));
+    }
     public Result test() {
         List<Restaurant> list = Restaurant.find.findList();
         return ok(Json.toJson(list));
@@ -28,7 +29,9 @@ public class Application extends Controller {
         return ok(Json.toJson(list));
     }
 
-
+    public Result test3(){
+        return redirect(routes.Application.index2(request().getQueryString("type")));
+    }
     public Result addMakanUser(){
 
         MakanUser user = Form.form(MakanUser.class).bindFromRequest().get();

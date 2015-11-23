@@ -51,6 +51,11 @@
                       }
                    });
                 });
+
+                $("#testlink").click(function(){
+                 var paramVal = "chinese";
+                    alert(paramVal);
+                });
           });
           var get_user = function(){
           $.ajax({
@@ -77,6 +82,8 @@
                 //$("#test").text(user.name);
             });
           }
+
+
       </script>
   </head>
   <body>
@@ -112,8 +119,8 @@
 
                     <!-- Collect the nav links, forms, and other content for toggling -->
                   <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                    <ul class="nav navbar-nav navbar-right" id="top-nav">
-                      <li><a href="#hero-area">Home</a></li>
+                    <ul class="nav navbar-nav navbar-right" >
+                      <li><a href="@routes.Application.index2("chinese")">Home</a></li>
                       <li><a href="#about-us">about us</a></li>
                       <li><a href="#blog">Blog</a></li>
                       <li><a href="#price">menu</a></li>
