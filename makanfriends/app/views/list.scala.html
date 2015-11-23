@@ -1,3 +1,4 @@
+@(message: String)
 <!DOCTYPE html>
 <html class="no-js">
 <head>
@@ -30,6 +31,54 @@
     <script src="@routes.Assets.versioned("js/plugins.js")"></script>
   <script src="@routes.Assets.versioned("js/wow.min.js")"></script>
     <script src="@routes.Assets.versioned("js/main.js")"></script>
+  <script type="text/javascript">
+  $( document ).ready(function() {
+        GetUrlValue();
+    });
+
+    function GetUrlValue(){
+              var url = window.location.search;
+              var newString = url.split("=");
+              var name = newString[1];
+              return name;
+      }
+      function updateList(){
+
+      }
+    function selectall(){
+      if(document.getElementById('call').checked){
+         document.getElementById('chi').checked = true;
+         document.getElementById('malay').checked = true;
+         document.getElementById('ind').checked = true;
+         document.getElementById('western').checked = true;
+         document.getElementById('kor').checked = true;
+         document.getElementById('jap').checked = true;
+      }
+      else if(!document.getElementById('call').checked){
+      document.getElementById('chi').checked = false;
+         document.getElementById('malay').checked = false;
+         document.getElementById('ind').checked = false;
+         document.getElementById('western').checked = false;
+         document.getElementById('kor').checked = false;
+         document.getElementById('jap').checked = false;
+      }
+      if(document.getElementById('lall').checked){
+         document.getElementById('north').checked = true;
+         document.getElementById('south').checked = true;
+         document.getElementById('east').checked = true;
+         document.getElementById('west').checked = true;
+         document.getElementById('central').checked = true;
+
+      }
+      else if(!document.getElementById('lall').checked){
+         document.getElementById('north').checked = false;
+         document.getElementById('south').checked = false;
+         document.getElementById('east').checked = false;
+          document.getElementById('west').checked = false;
+          document.getElementById('central').checked = false;
+      }
+    }
+  </script>
     <script type="text/javascript">
           $( document ).ready(function() {
                 get_restaurants();
@@ -104,10 +153,6 @@ Header start
               <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                   <li><a href="@routes.HomeController.index()">Home</a></li>
-                 <!-- <li><a href="@routes.listapplication.list()">Recommended</a></li>-->
-                  <li><a href="@routes.CuisineController.index()">Cuisine</a></li>
-                  <li><a href="@routes.LocationController.index()">Location</a></li>
-                  <!--<li><a href="#subscribe">news</a></li>-->
                   <li><a href="#">Log In</a></li>
                 </ul>
               </div><!-- /.navbar-collapse -->
@@ -124,7 +169,37 @@ Header start
 <section id="price">
 
   <div class="container">
-    <h3><span>Enter Filter Here</span></h3>
+    <h3><input id="searchBox" type="text" size="100"> <input id="searchButton" type="submit" value="Search"></h3>
+    <br>
+    <div>
+      <table cellpadding="3">
+        <tr>
+          <td colspan="4"><h3><label>Cuisines</label></h3></td>
+          <td colspan="4"><h3><label>Location</label></h3></td>
+        </tr>
+        <tr>
+          <td colspan="2"><h4><label><input type="checkbox" id="chi" value="chinese" >Chinese</label></h4></td>
+          <td colspan="2"><h4><label><input type="checkbox" id="ind" value="indian" >Indian</label></h4></td>
+          <td colspan="2"><h4><label><input type="checkbox" id="north" value="north">North</label></h4></td>
+          <td colspan="2"><h4><label><input type="checkbox" id="south" value="south">South</label></h4></td>
+        </tr>
+        <tr>
+          <td colspan="2"><h4><label><input type="checkbox" id="jap" value="japanese" >Japanese</label></h4></td>
+          <td colspan="2"><h4><label><input type="checkbox" id="malay" value="malay" >Malay</label></h4></td>
+          <td colspan="2"><h4><label><input type="checkbox" id="east" value="east">East</label></h4></td>
+          <td colspan="2"><h4><label><input type="checkbox" id="west" value="west">West</label></h4></td>
+        </tr>
+        <tr>
+          <td colspan="2"><h4><label><input type="checkbox" id="kor" value="korean" >Korean</label></h4></td>
+          <td colspan="2"><h4><label><input type="checkbox" id="western" value="western" >Western</label></h4></td>
+          <td colspan="4"><h4><label><input type="checkbox" id="central" value="central">Central</label></h4></td>
+        </tr>
+        <tr>
+          <td colspan="4"><h4><label><input type="checkbox" id="call" value="call" onchange="selectall()">All Cuisine</label></h4></td>
+          <td colspan="4"><h4><label><input type="checkbox" id="lall" value="lall" onchange="selectall()">All Location</label></h4></td>
+        </tr>
+      </table>
+    </div>
     <div class="col-md-12">
       <div class="block">
         <div class="pricing-list">
@@ -134,72 +209,7 @@ Header start
             <div id="rest">
           <ul class="list">
 
-            <li class="wow fadeInUp" data-wow-duration="300ms" data-wow-delay="300ms">
-              <div class="item">
-                <div class="item-title">
-                  <h2>Pancakes n' Such</h2>
-                  <div class="border-bottom"></div>
-                  <span>$ 25.00</span>
-                </div>
-                <img class="img-responsive" src="@routes.Assets.versioned("images/slider/slider-img-1.jpg")" alt="">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim&&</p>
-              </div>
-            </li>
-            <li class="wow fadeInUp" data-wow-duration="300ms" data-wow-delay="400ms">
-              <div class="item">
-                <div class="item-title">
-                  <h2>Homestyle Chicken Pot Pie</h2>
-                  <div class="border-bottom"></div>
-                  <span>$ 10.00</span>
-                </div>
-                <img class="img-responsive" src="@routes.Assets.versioned("images/slider/slider-img-1.jpg")" alt="">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim&&</p>
-              </div>
-            </li>
-            <li class="wow fadeInUp" data-wow-duration="300ms" data-wow-delay="500ms">
-              <div class="item">
-                <div class="item-title">
-                  <h2>Cereal, Panecillos y Frutas </h2>
-                  <div class="border-bottom"></div>
-                  <span>$ 5.00</span>
-                </div>
-                <img class="img-responsive" src="@routes.Assets.versioned("images/slider/slider-img-1.jpg")" alt="">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim&&</p>
-              </div>
-            </li>
-            <li class="wow fadeInUp" data-wow-duration="300ms" data-wow-delay="600ms">
-              <div class="item">
-                <div class="item-title">
-                  <h2>Meat of Skewers</h2>
-                  <div class="border-bottom"></div>
-                  <span>$ 15.00</span>
-                </div>
-                <img class="img-responsive" src="@routes.Assets.versioned("images/slider/slider-img-1.jpg")" alt="">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim&&</p>
-              </div>
-            </li>
-            <li class="wow fadeInUp" data-wow-duration="300ms" data-wow-delay="700ms">
-              <div class="item">
-                <div class="item-title">
-                  <h2>Steak with a Garlic and Parsley Risotto</h2>
-                  <div class="border-bottom"></div>
-                  <span>$ 75.00</span>
-                </div>
-                <img class="img-responsive" src="@routes.Assets.versioned("images/slider/slider-img-1.jpg")" alt="">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim&&</p>
-              </div>
-            </li>
-            <li class="wow fadeInUp" data-wow-duration="300ms" data-wow-delay="800ms">
-              <div class="item">
-                <div class="item-title">
-                  <h2>Caesar Salad</h2>
-                  <div class="border-bottom"></div>
-                  <span>$ 7.00</span>
-                </div>
-                <img class="img-responsive" src="@routes.Assets.versioned("images/slider/slider-img-1.jpg")" alt="">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim&&</p>
-              </div>
-            </li>
+
 
           </ul>
         </div>
