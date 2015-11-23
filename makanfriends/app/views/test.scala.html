@@ -32,7 +32,30 @@
     <script src="@routes.Assets.versioned("js/main.js")"></script>
       <script type="text/javascript">
           $( document ).ready(function() {
-                get_user();
+
+                $("#chinese").click(function(){
+                var paramVal = "chinese";
+                   $.ajax({
+                      type:'GET',
+                       data:{
+                        type:paramVal
+                       },
+                      url:'@routes.Application.test2()',
+                      success: function(data, textStatus, jqXHR){
+                        processUser(data);
+                      },
+                      error: function(jqXHR, textStatus, errorThrown){
+                      },
+                      complete: function(jqXHR,textStatus){
+                        console.log(textStatus);
+                      }
+                   });
+                });
+
+                $("#testlink").click(function(){
+                 var paramVal = "chinese";
+                    alert(paramVal);
+                });
           });
           var get_user = function(){
           $.ajax({
@@ -44,18 +67,23 @@
                    processUser(data);
                 },
                 error: function(jqXHR, textStatus, errorThrown){
+                    console.log(textStatus);
                 },
                 complete: function(jqXHR,textStatus){
-                console.log(textStatus);
+                    console.log(textStatus);
                 }
             });
           };
+
+
           var processUser = function(makanUser){
             $.each(makanUser, function(i, user){
-                console.log(user.name);
-                $("#test").text(user.name);
+                console.log(user);
+                //$("#test").text(user.name);
             });
           }
+
+
       </script>
   </head>
   <body>
@@ -91,8 +119,8 @@
 
                     <!-- Collect the nav links, forms, and other content for toggling -->
                   <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                    <ul class="nav navbar-nav navbar-right" id="top-nav">
-                      <li><a href="#hero-area">Home</a></li>
+                    <ul class="nav navbar-nav navbar-right" >
+                      <li><a href="@routes.Application.index2("chinese")">Home</a></li>
                       <li><a href="#about-us">about us</a></li>
                       <li><a href="#blog">Blog</a></li>
                       <li><a href="#price">menu</a></li>
@@ -120,7 +148,7 @@
               </div>
               <div id="owl-example" class="owl-carousel">
                 <div>
-                  <img class="img-responsive" src="@routes.Assets.versioned("images/slider/slider-img-1.jpg")" alt="">
+                  <img id="chinese" class="img-responsive" src="@routes.Assets.versioned("images/slider/slider-img-1.jpg")" alt="">
                 </div>
                 <div>
                   <img class="img-responsive" src="@routes.Assets.versioned("images/slider/slider-img-2.jpg")" alt="">
