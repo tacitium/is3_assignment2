@@ -30,6 +30,44 @@
     <script src="@routes.Assets.versioned("js/plugins.js")"></script>
   <script src="@routes.Assets.versioned("js/wow.min.js")"></script>
     <script src="@routes.Assets.versioned("js/main.js")"></script>
+    <script type="text/javascript">
+          $( document ).ready(function() {
+                get_restaurants();
+
+          });
+          var get_restaurants = function(){
+          $.ajax({
+                url:'@routes.Application.test()',
+                type:'GET',
+                beforeSend:function(jqXHR, settings){
+                jqXHR.setRequestHeader("Content-Type", "application/json");
+                },success: function(data, textStatus, jqXHR){
+                  processUser(data);
+                },
+                error: function(jqXHR, textStatus, errorThrown){
+                },
+                complete: function(jqXHR,textStatus){
+                console.log(textStatus);
+                }
+            });
+          };
+          var processUser = function(RestaurantsList){
+            $.each(RestaurantsList, function(i, Restaurants){
+                console.log(Restaurants.getName);
+                $('#rest .list').append('<li>hello</li>');
+                $("#list").text(Restaurant.getName);
+            });
+          }
+          var update_list= function(updated_restaurants) {
+
+           $('#pricing-list.list li').remove();
+
+            $.each(updated_restaurants, function(index,Restaurants){
+            console.log(Restaurants.name);
+             $('#rest .list').append('<li class="wow fadeInUp" data-wow-duration="300ms" data-wow-delay="300ms"><div class="item"><div class="item-title"><h2>Pancakes n Such</h2></div></div></li>');
+            });
+          };
+      </script>
 </head>
 <body>
 <!--
@@ -69,7 +107,6 @@ Header start
                  <!-- <li><a href="@routes.listapplication.list()">Recommended</a></li>-->
                   <li><a href="@routes.CuisineController.index()">Cuisine</a></li>
                   <li><a href="@routes.LocationController.index()">Location</a></li>
-                  <li><a href="http:\\www.google.com">Price</a></li>
                   <!--<li><a href="#subscribe">news</a></li>-->
                   <li><a href="#">Log In</a></li>
                 </ul>
@@ -94,7 +131,9 @@ Header start
           <div class="title">
             <h3><span>Results</span></h3>
           </div>
-          <ul>
+            <div id="rest">
+          <ul class="list">
+
             <li class="wow fadeInUp" data-wow-duration="300ms" data-wow-delay="300ms">
               <div class="item">
                 <div class="item-title">
@@ -161,8 +200,9 @@ Header start
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim&&</p>
               </div>
             </li>
+
           </ul>
-          <a class="btn btn-default pull-right wow bounceIn" data-wow-duration="500ms" data-wow-delay="1200ms" href="#" role="button">More Info</a>
+        </div>
         </div>
       </div>
     </div><!-- .col-md-12 close -->
@@ -193,34 +233,8 @@ subscribe start
       </div><!-- .col-md-12 close -->
 </div><!-- .row close -->
 </div><!-- .containe close -->
-</section><!-- #subscribe close -->-->
-<!--
-CONTACT US  start
-============================= -->
-<section id="contact-us">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <div class="block">
-          <h1 class="heading wow fadeInUp" data-wow-duration="500ms" data-wow-delay="300ms">our <span>CONTACT US</span></h1>
-          <h3 class="title wow fadeInLeft" data-wow-duration="500ms" data-wow-delay="300ms">Sign Up for <span>Email Alerts</span> </h3>
-          <form>
-            <div class="form-group wow fadeInDown" data-wow-duration="500ms" data-wow-delay="600ms">
-              <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Write your full name here...">
-            </div>
-            <div class="form-group wow fadeInDown" data-wow-duration="500ms" data-wow-delay="800ms">
-              <input type="text" class="form-control" placeholder="Write your email address here...">
-            </div>
-            <div class="form-group wow fadeInDown" data-wow-duration="500ms" data-wow-delay="1000ms">
-              <textarea class="form-control" rows="3" placeholder="Write your message here..."></textarea>
-            </div>
-          </form>
-          <a class="btn btn-default wow bounceIn" data-wow-duration="500ms" data-wow-delay="1300ms" href="#" role="button">send your message</a>
-        </div>
-      </div><!-- .col-md-12 close -->
-    </div><!-- .row close -->
-  </div><!-- .container close -->
-</section><!-- #contact-us close -->
+</section><!-- #subscribe close -->
+
 <!--
 footer  start
 ============================= -->

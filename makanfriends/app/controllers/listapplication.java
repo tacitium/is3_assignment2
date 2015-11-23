@@ -25,6 +25,7 @@ public class listapplication extends Controller {
 
             }
         }*/
+
         return ok(Json.toJson(listofrestaurants));
     }
 
