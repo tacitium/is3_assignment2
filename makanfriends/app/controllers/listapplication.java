@@ -20,6 +20,11 @@ public class ListApplication extends Controller {
         return ok(list.render(keyword));
 
     }
+
+    public Result getRestaurantList(String querykeyword){
+        List<Restaurant> list = Restaurant.find.where().like("category", "%" + request().getQueryString("type") +"%").findList();
+        return ok(Json.toJson(list));
+    }
     public Result addMakanUser(){
 
         MakanUser user = Form.form(MakanUser.class).bindFromRequest().get();

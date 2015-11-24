@@ -32,6 +32,34 @@
   <script src="@routes.Assets.versioned("js/wow.min.js")"></script>
     <script src="@routes.Assets.versioned("js/main.js")"></script>
   <script type="text/javascript">
+      window.onload=function(){
+      $('.selectpicker').selectpicker();
+      $('.rm-mustard').click(function() {
+        $('.remove-example').find('[value=Mustard]').remove();
+        $('.remove-example').selectpicker('refresh');
+      });
+      $('.rm-ketchup').click(function() {
+        $('.remove-example').find('[value=Ketchup]').remove();
+        $('.remove-example').selectpicker('refresh');
+      });
+      $('.rm-relish').click(function() {
+        $('.remove-example').find('[value=Relish]').remove();
+        $('.remove-example').selectpicker('refresh');
+      });
+      $('.ex-disable').click(function() {
+          $('.disable-example').prop('disabled',true);
+          $('.disable-example').selectpicker('refresh');
+      });
+      $('.ex-enable').click(function() {
+          $('.disable-example').prop('disabled',false);
+          $('.disable-example').selectpicker('refresh');
+      });
+
+      // scrollYou
+      $('.scrollMe .dropdown-menu').scrollyou();
+      };
+      </script>
+  <script type="text/javascript">
   $( document ).ready(function() {
         GetUrlValue();
     });
@@ -43,40 +71,11 @@
               return name;
       }
       function updateList(){
+        $.ajax({
+          type: "GET",
+          url: '@routes.ListApplication.
+      }
 
-      }
-    function selectall(){
-      if(document.getElementById('call').checked){
-         document.getElementById('chi').checked = true;
-         document.getElementById('malay').checked = true;
-         document.getElementById('ind').checked = true;
-         document.getElementById('western').checked = true;
-         document.getElementById('kor').checked = true;
-         document.getElementById('jap').checked = true;
-      }
-      else if(!document.getElementById('call').checked){
-      document.getElementById('chi').checked = false;
-         document.getElementById('malay').checked = false;
-         document.getElementById('ind').checked = false;
-         document.getElementById('western').checked = false;
-         document.getElementById('kor').checked = false;
-         document.getElementById('jap').checked = false;
-      }
-      if(document.getElementById('lall').checked){
-         document.getElementById('north').checked = true;
-         document.getElementById('south').checked = true;
-         document.getElementById('east').checked = true;
-         document.getElementById('west').checked = true;
-         document.getElementById('central').checked = true;
-
-      }
-      else if(!document.getElementById('lall').checked){
-         document.getElementById('north').checked = false;
-         document.getElementById('south').checked = false;
-         document.getElementById('east').checked = false;
-          document.getElementById('west').checked = false;
-          document.getElementById('central').checked = false;
-      }
     }
   </script>
     <script type="text/javascript">
@@ -171,34 +170,13 @@ Header start
   <div class="container">
     <h3><input id="searchBox" type="text" size="100"> <input id="searchButton" type="submit" value="Search"></h3>
     <br>
-    <div>
-      <table cellpadding="3">
-        <tr>
-          <td colspan="4"><h3><label>Cuisines</label></h3></td>
-          <td colspan="4"><h3><label>Location</label></h3></td>
-        </tr>
-        <tr>
-          <td colspan="2"><h4><label><input type="checkbox" id="chi" value="chinese" >Chinese</label></h4></td>
-          <td colspan="2"><h4><label><input type="checkbox" id="ind" value="indian" >Indian</label></h4></td>
-          <td colspan="2"><h4><label><input type="checkbox" id="north" value="north">North</label></h4></td>
-          <td colspan="2"><h4><label><input type="checkbox" id="south" value="south">South</label></h4></td>
-        </tr>
-        <tr>
-          <td colspan="2"><h4><label><input type="checkbox" id="jap" value="japanese" >Japanese</label></h4></td>
-          <td colspan="2"><h4><label><input type="checkbox" id="malay" value="malay" >Malay</label></h4></td>
-          <td colspan="2"><h4><label><input type="checkbox" id="east" value="east">East</label></h4></td>
-          <td colspan="2"><h4><label><input type="checkbox" id="west" value="west">West</label></h4></td>
-        </tr>
-        <tr>
-          <td colspan="2"><h4><label><input type="checkbox" id="kor" value="korean" >Korean</label></h4></td>
-          <td colspan="2"><h4><label><input type="checkbox" id="western" value="western" >Western</label></h4></td>
-          <td colspan="4"><h4><label><input type="checkbox" id="central" value="central">Central</label></h4></td>
-        </tr>
-        <tr>
-          <td colspan="4"><h4><label><input type="checkbox" id="call" value="call" onchange="selectall()">All Cuisine</label></h4></td>
-          <td colspan="4"><h4><label><input type="checkbox" id="lall" value="lall" onchange="selectall()">All Location</label></h4></td>
-        </tr>
-      </table>
+      <div class="row">
+        <h2>Button Dropdown Select</h2><br>
+      <select class="selectpicker" data-style="btn-primary" style="display: none;">
+        <option>Mustard</option>
+        <option>Ketchup</option>
+        <option>Relish</option>
+      </select>
     </div>
     <div class="col-md-12">
       <div class="block">
