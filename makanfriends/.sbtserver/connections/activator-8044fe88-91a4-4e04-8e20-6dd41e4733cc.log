@@ -1,0 +1,30 @@
+New log file opened at Wed Nov 25 15:48:28 SGT 2015 by 10196@Lenovo-PC
+Sending msg to client activator-8044fe88-91a4-4e04-8e20-6dd41e4733cc: DetachedLogEvent(LogMessage(debug,sbt server socket logs are in: C:\Users\Test\Documents\GitHub\is3_assignment2\makanfriends\.sbtserver\connections\master.log))
+Sending msg to client activator-8044fe88-91a4-4e04-8e20-6dd41e4733cc: DetachedLogEvent(LogMessage(debug,sbt general server logs are in: C:\Users\Test\Documents\GitHub\is3_assignment2\makanfriends\.sbtserver\master.log))
+Sending msg to client activator-8044fe88-91a4-4e04-8e20-6dd41e4733cc: DetachedLogEvent(LogMessage(debug,sbt client logs are in: C:\Users\Test\Documents\GitHub\is3_assignment2\makanfriends\.sbtserver\connections\activator-8044fe88-91a4-4e04-8e20-6dd41e4733cc.log))
+Reading next message from client.
+Got request: ListenToEvents()
+Reading next message from client.
+Got request: ListenToBuildChange()
+Reading next message from client.
+Got request: SendSyntheticBuildChanged()
+Reading next message from client.
+Sending msg to client activator-8044fe88-91a4-4e04-8e20-6dd41e4733cc: DetachedLogEvent(LogMessage(debug,> --initialize))
+Sending msg to client activator-8044fe88-91a4-4e04-8e20-6dd41e4733cc: (3,ReceivedResponse())
+Got request: KeyLookupRequest(discoveredMainClasses)
+Reading next message from client.
+Got request: KeyLookupRequest(mainClass)
+Reading next message from client.
+Sending msg to client activator-8044fe88-91a4-4e04-8e20-6dd41e4733cc: DetachedLogEvent(LogMessage(debug,> initialize))
+Sending msg to client activator-8044fe88-91a4-4e04-8e20-6dd41e4733cc: DetachedLogEvent(LogMessage(debug,> onFailure load-failed))
+Sending msg to client activator-8044fe88-91a4-4e04-8e20-6dd41e4733cc: DetachedLogEvent(LogMessage(debug,> boot))
+Sending msg to client activator-8044fe88-91a4-4e04-8e20-6dd41e4733cc: DetachedLogEvent(LogMessage(debug,> reload))
+Got request: UnlistenToEvents()
+Reading next message from client.
+Got request: UnlistenToBuildChange()
+Reading next message from client.
+Sending msg to client activator-8044fe88-91a4-4e04-8e20-6dd41e4733cc: (8,ReceivedResponse())
+Client activator-8044fe88-91a4-4e04-8e20-6dd41e4733cc EOF, shutting down.
+Stopping client.
+Dropping message (0,ReceivedResponse()) to dead client activator-8044fe88-91a4-4e04-8e20-6dd41e4733cc
+Client activator-8044fe88-91a4-4e04-8e20-6dd41e4733cc thread exiting.

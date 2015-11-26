@@ -19,3 +19,6 @@ libraryDependencies ++= Seq(
 routesGenerator := InjectedRoutesGenerator
 
 lazy val myProject = (project in file(".")).enablePlugins(PlayJava, PlayEbean)
+
+
+fork in run := true

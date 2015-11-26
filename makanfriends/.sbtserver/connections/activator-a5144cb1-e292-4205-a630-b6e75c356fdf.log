@@ -1,0 +1,26 @@
+New log file opened at Wed Nov 25 15:48:28 SGT 2015 by 10196@Lenovo-PC
+Sending msg to client activator-a5144cb1-e292-4205-a630-b6e75c356fdf: DetachedLogEvent(LogMessage(debug,sbt server socket logs are in: C:\Users\Test\Documents\GitHub\is3_assignment2\makanfriends\.sbtserver\connections\master.log))
+Sending msg to client activator-a5144cb1-e292-4205-a630-b6e75c356fdf: DetachedLogEvent(LogMessage(debug,sbt general server logs are in: C:\Users\Test\Documents\GitHub\is3_assignment2\makanfriends\.sbtserver\master.log))
+Sending msg to client activator-a5144cb1-e292-4205-a630-b6e75c356fdf: DetachedLogEvent(LogMessage(debug,sbt client logs are in: C:\Users\Test\Documents\GitHub\is3_assignment2\makanfriends\.sbtserver\connections\activator-a5144cb1-e292-4205-a630-b6e75c356fdf.log))
+Reading next message from client.
+Got request: ListenToEvents()
+Reading next message from client.
+Got request: ListenToBuildChange()
+Reading next message from client.
+Got request: SendSyntheticBuildChanged()
+Reading next message from client.
+Got request: KeyLookupRequest(discoveredMainClasses)
+Reading next message from client.
+Got request: KeyLookupRequest(mainClass)
+Reading next message from client.
+Sending msg to client activator-a5144cb1-e292-4205-a630-b6e75c356fdf: (3,ReceivedResponse())
+Sending msg to client activator-a5144cb1-e292-4205-a630-b6e75c356fdf: DetachedLogEvent(LogMessage(debug,[Loading] Scanning directory C:\Users\Test\Documents\GitHub\is3_assignment2\makanfriends\project))
+Got request: UnlistenToEvents()
+Reading next message from client.
+Got request: UnlistenToBuildChange()
+Reading next message from client.
+Client activator-a5144cb1-e292-4205-a630-b6e75c356fdf EOF, shutting down.
+Stopping client.
+Dropping message (8,ReceivedResponse()) to dead client activator-a5144cb1-e292-4205-a630-b6e75c356fdf
+Client activator-a5144cb1-e292-4205-a630-b6e75c356fdf thread exiting.
+Dropping message (0,ReceivedResponse()) to dead client activator-a5144cb1-e292-4205-a630-b6e75c356fdf

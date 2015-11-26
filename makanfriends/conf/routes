@@ -8,12 +8,11 @@ GET     /                           controllers.Application.index()
 GET     /test                       controllers.Application.test()
 GET     /test2                      controllers.Application.test2()
 GET     /test3                      controllers.Application.test3()
-<<<<<<< HEAD
+
 GET		/cuisineTest				controllers.Application.cuisineIndex(type:String)
-GET     /list                       controllers.listapplication.list()
-=======
+
 GET     /list                       controllers.ListApplication.list(type:String)
->>>>>>> 7fba70543e679d712554ce69605176091524a7bb
+
 GET     /index2                     controllers.Application.index2(type:String)
 GET		/Home						controllers.HomeController.index()
 GET		/Cuisine					controllers.CuisineController.index()
