@@ -19,6 +19,11 @@ public class Application extends Controller {
     public Result index2(String type){
         return ok(test2.render(type));
     }
+    public Result cuisineIndex(String type)
+    {
+        //return ok(cusineTest.render(type));
+        return ok(Json.toJson(type));
+    }
     public Result test() {
         List<Restaurant> list = Restaurant.find.findList();
         return ok(Json.toJson(list));
