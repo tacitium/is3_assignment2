@@ -30,7 +30,7 @@ public class Application extends Controller {
     }
 
     public Result test2() {
-        List<Restaurant> list = Restaurant.find.where().like("category", "%" + request().getQueryString("type") +"%").findList();
+        List<Restaurant> list = Restaurant.find.where().like("category", "%" + request().getQueryString("type") +"%").like("postal_code","%89855%").findList();
         return ok(Json.toJson(list));
     }
 
