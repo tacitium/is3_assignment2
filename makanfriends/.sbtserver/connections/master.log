@@ -1,37 +1,10 @@
-New log file opened at Wed Nov 25 15:48:27 SGT 2015 by 10196@Lenovo-PC
-Taking next connection to: 10776
-New client attempting to connect on port: 10777-10776
-  Address = /172.17.193.19:10776
-This client on port 10777 has uuid a5144cb1-e292-4205-a630-b6e75c356fdf configName activator humanReadableName Activator protocolVersion 3 featureTags Vector()
-Connected Clients: activator-a5144cb1-e292-4205-a630-b6e75c356fdf
-Taking next connection to: 10776
-New client attempting to connect on port: 10778-10776
-  Address = /172.17.193.19:10776
-Handshake exception on socket: 10778
-sbt.impl.ipc.HandshakeException: Unable to perform handshake
-	at sbt.impl.ipc.Peer.handshake(IPC.scala:46)
-	at sbt.impl.ipc.MultiClientServer.<init>(IPC.scala:150)
-	at sbt.server.SbtServerSocketHandler$$anon$1.run(SbtServerSocketHandler.scala:43)
-Caused by: java.net.SocketException: Software caused connection abort: recv failed
-	at java.net.SocketInputStream.socketRead0(Native Method)
-	at java.net.SocketInputStream.socketRead(Unknown Source)
-	at java.net.SocketInputStream.read(Unknown Source)
-	at java.net.SocketInputStream.read(Unknown Source)
-	at java.io.BufferedInputStream.fill(Unknown Source)
-	at java.io.BufferedInputStream.read(Unknown Source)
-	at java.io.DataInputStream.readInt(Unknown Source)
-	at sbt.impl.ipc.Peer.receive(IPC.scala:95)
-	at sbt.impl.ipc.Peer.handshake(IPC.scala:49)
-	... 2 more
-Taking next connection to: 10776
-New client attempting to connect on port: 10779-10776
-  Address = /172.17.193.19:10776
-This client on port 10779 has uuid 8044fe88-91a4-4e04-8e20-6dd41e4733cc configName activator humanReadableName Activator protocolVersion 3 featureTags Vector()
-Connected Clients: activator-a5144cb1-e292-4205-a630-b6e75c356fdf, activator-8044fe88-91a4-4e04-8e20-6dd41e4733cc
-Taking next connection to: 10776
+New log file opened at Mon Nov 30 13:19:45 SGT 2015 by 9764@Lenovo-PC
+Taking next connection to: 4426
+New client attempting to connect on port: 4427-4426
+  Address = /172.17.193.19:4426
+This client on port 4427 has uuid b73f8beb-586a-4895-a3a8-ebc2af72995d configName play-fork-run humanReadableName Play Fork Run protocolVersion 1 featureTags Vector()
+Connected Clients: play-fork-run-b73f8beb-586a-4895-a3a8-ebc2af72995d
+Taking next connection to: 4426
 Checking to see if clients are empty...
-No non-daemon clients connected after 3 min. Shutting down.
-Server socket thread exiting.
-0 clients open, will close them...
-All client sockets have been closed.
-Closing the 10196@Lenovo-PC logs at Wed Nov 25 15:51:34 SGT 2015, goodbye.
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 4426

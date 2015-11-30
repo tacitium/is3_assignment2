@@ -74,7 +74,6 @@
               var name = newString[1];
               return name;
       }
-
   </script>
     <script type="text/javascript">
           $( document ).ready(function() {
@@ -169,18 +168,45 @@ Header start
     <h3><input id="searchBox" type="text" size="100"> <input id="searchButton" type="submit" value="Search"></h3>
     <br>
       <div class="row">
-        <h2>Button Dropdown Select</h2><br>
-        <select class="selectpicker" data-style="btn-info" style="display: none;">
-          <option>Mustard</option>
-          <option>Ketchup</option>
-          <option>Relish</option>
-        </select>
-        <select class="selectpicker" data-style="btn-success" style="display: none;">
-          <option>Mustard</option>
-          <option>Ketchup</option>
-          <option>Relish</option>
-        </select>
+        <table>
+          <tr>
+            <td>
+              <div class="btn-group">
+                <select class="btn btn-default dropdown-toggle" data-toggle="dropdown"  role="menu">
+                  <option>All Cuisines</option>
+                  <option>Chinese</option>
+                  <option>Indian</option>
+                  <option>Japanese</option>
+                  <option>Korean</option>
+                  <option>Malay</option>
+                  <option>Western</option>
+                </select>
+              </div>
+            </td>
+            <td>
+              <div class="btn-group">
+                <select class="btn btn-default dropdown-toggle" data-toggle="dropdown"  role="menu">
+                  <option>All Locations</option>
+                  <option>North</option>
+                  <option>South</option>
+                  <option>East</option>
+                  <option>West</option>
+                </select>
+              </div>
+            </td>
+            <td>
+              <div class="col-xs-6">
+                <div class="range">
+                  <input type="range" name="range" min="1" max="100" value="50" onchange="range.value=value">
+                  <output id="range">50</output>
+                </div>
+              </div>
+            </td>
+          </tr>
+        </table>
+        </div>
     </div>
+
     <div class="col-md-12">
       <div class="block">
         <div class="pricing-list">
