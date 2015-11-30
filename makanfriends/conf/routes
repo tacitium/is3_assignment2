@@ -10,7 +10,6 @@ GET     /test2                      controllers.Application.test2()
 GET     /test3                      controllers.Application.test3()
 
 GET		/cuisineTest				controllers.Application.cuisineIndex(type:String)
-
 GET     /list                       controllers.ListApplication.list(type:String)
 
 GET     /index2                     controllers.Application.index2(type:String)
